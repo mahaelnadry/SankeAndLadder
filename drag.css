@@ -1,0 +1,42 @@
+body {
+	background:url('back.jpg');
+}
+canvas {
+	background:url(gametransparent.png);
+}
+
+.container {
+	margin-left: 0px;
+}
+
+.col-md-4 {
+	text-align: center;
+    position: relative;
+    top: 100px;
+    width: 179px;
+}
+
+.col-md-8 {
+	width: 961px;
+}
+
+.btn-danger{
+	font-family: 'Fontdiner Swanky', cursive;
+	margin-top: 10px;
+}
+.btn-danger:hover{
+	border-color: transparent;
+	color: #000;
+}
+h1 {
+	margin-bottom: 50px;
+	width: 300px;
+	color: #FFF32B;
+	font-family: 'Fontdiner Swanky', cursive;
+}
+h3 {
+	margin-top: 60px;
+	color: #FFF32B;
+    font-family: 'Fontdiner Swanky', cursive;
+    width: 300px;
+}

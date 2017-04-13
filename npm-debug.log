@@ -1,0 +1,30 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'shrinkwrap' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose stack Error: Problems were encountered
+4 verbose stack Please correct and try again.
+4 verbose stack extraneous: express@4.10.2 E:\Yasmin\CMP\cmp 3rd\2nd term\OS\chat-example\node_modules\express
+4 verbose stack     at shrinkwrap_ (C:\Program Files\nodejs\node_modules\npm\lib\shrinkwrap.js:37:15)
+4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\shrinkwrap.js:31:5
+4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\ls.js:47:30
+4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+4 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+4 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+4 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+4 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+5 verbose cwd E:\Yasmin\CMP\cmp 3rd\2nd term\OS\chat-example
+6 error Windows_NT 10.0.10586
+7 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "shrinkwrap"
+8 error node v4.2.6
+9 error npm  v2.14.12
+10 error Problems were encountered
+10 error Please correct and try again.
+10 error extraneous: express@4.10.2 E:\Yasmin\CMP\cmp 3rd\2nd term\OS\chat-example\node_modules\express
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

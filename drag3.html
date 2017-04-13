@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Game</title>
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+    <link href="drag.css" rel="stylesheet">
+
+
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <script type='text/javascript' src='d6.js'></script>
+	<script src="sweetalert-master/dist/sweetalert.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">
+  
+	</head>
+
+  <body> 
+		
+		 <input type="text" id="userInput" type="hidden" value="" />
+    
+	  <div class="container">  
+      <div class="row">
+        <div class="col-md-8">
+          <canvas id="canvas" width= "960px" height= "657px" >
+		      This text is displayed if your browser does not support HTML5 Canvas.
+		      </canvas>
+        </div>
+        <div class="col-md-4">
+        <h1 id="h1"></h1>
+  	      <script type='text/javascript'>
+		  document.getElementById("userInput").style.visibility='hidden';
+		  function attack(result) {
+              console.log("html "+result);
+			  
+					document.getElementById("userInput").value=result;
+					var socket = io();
+				  socket.emit('send_value_Dice',result );	
+            }
+		   D6.dice(1,attack);
+            </script>
+            <h3 id="h3"></h3>
+        </div>
+      </div>
+	  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+
+	 <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  
+   <script src="drag3.js"></script> 
+  
+  </html>
